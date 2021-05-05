@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.page-header {
+  padding-top: 2rem;
+}
+
+.search-bar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.favourites-girls, .favourites-boys {
+  border-radius: 1rem;
+}
+
+.favourites-girls {
+  background-color: rgba(249, 210, 216, 0.662);
+} 
+
+.favourites-boys {
+  background-color: rgba(171, 229, 246, 0.662);
+}
+
+.girls-name-styling {
+  color: rgb(232, 103, 125);
+  font-weight: 800;
+}
+
+.boys-name-styling {
+  color: rgb(46, 182, 227);;
+  font-weight: 700;
+}
+
+.girls-names-list, .boys-names-list {
+  border-radius: 1rem;
+  padding-top: 2rem
+}
+
+.girls-names-list {
+  background-color: rgba(249, 210, 216, 0.662);
+}
+
+.girls-heading, .boys-heading {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+}
+
+.girls-heading {
+  color: rgb(227, 130, 146);
+}
+
+.boys-names-list {
+  background-color: rgba(171, 229, 246, 0.662);
+}
+
+.boys-heading {
+  color: rgb(121, 205, 232);
+}
