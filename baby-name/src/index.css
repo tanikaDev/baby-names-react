@@ -70,3 +70,8 @@ code {
 .boys-heading {
   color: rgb(121, 205, 232);
 }
+
+
+.display-none {
+  display: none;
+}

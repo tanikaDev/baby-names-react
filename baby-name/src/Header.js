@@ -1,10 +1,7 @@
-import SearchBar from "./SearchBar"
-function Header( { state }) {
-	const [names, setNames] = state
+function Header() {
 	return (
 		<header className="row justify-content-center ">
 			<h1 className="page-header col-12">Baby Name Finder</h1>
-			<SearchBar state={[names,setNames]} />
 		</header>
 	);
 }

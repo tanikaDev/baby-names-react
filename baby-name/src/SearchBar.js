@@ -1,13 +1,14 @@
 import babyNamesData from "./babyNamesData.json"
+import SelectSex from "./SelectSex"
 
-function SearchBar( { state }) {
-	const [names, setNames] = state; 
+function SearchBar( { state, clickEvent }) {
+	const [mainList, setMainList] = state; 
 
 	function searchName(event) {
 		let search = event.target.value;
 		let listNames = [];
 
-		names.map((name) => {
+		mainList.map((name) => {
 			search.toLowerCase();
 			let currentName = name.name.toLowerCase();
 			if (!currentName.includes(search)){
@@ -17,15 +18,16 @@ function SearchBar( { state }) {
 		})
 
 		if (search === "") {
-			setNames(babyNamesData);
+			setMainList(babyNamesData);
 		} else {
-			setNames(listNames);
+			setMainList(listNames);
 		}
 	}
     return (
-        <>
-        <input type="text" className="search-bar col-5" placeholder="search" onChange={searchName}></input>
-        </>
+			<div className="row align-items-center" >
+				<input type="text" className="search-bar col-5 offset-3" placeholder="search" onChange={searchName}></input>
+				<SelectSex clickEvent={clickEvent}/>
+			</div>
     );
 }
  

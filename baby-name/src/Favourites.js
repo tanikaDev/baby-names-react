@@ -1,18 +1,14 @@
 // import React, { useState } from 'react'
 
-function Favourites( { favourites }) {
-	console.log(favourites)
+function Favourites({favourites, clickEvent } ) {
 
-	function removeName() {
-		
-	}
 	return (
 		<>
 			<div className="col-12">
 				<p>Favourites:</p>
 				<div className="row">
 					{favourites.map((name, index) => {
-						return <p key={index} className={name.styling} onClick={removeName}>{name.name}</p>;
+						return <p key={index} className={name.styling} onClick={clickEvent}>{name.nameSelected}</p>;
 					})}
 				</div>
 			</div>

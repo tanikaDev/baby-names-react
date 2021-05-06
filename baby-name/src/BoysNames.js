@@ -1,7 +1,17 @@
-// import Favourites from "./Favourites";
+import DisplayNames from "./DisplayNames"
 
-function BoysNames({ names }) {
+function BoysNames({ names, selectedSex, clickEvent }) {
 
+	function styling() {
+
+		if (selectedSex === "both") {
+			return "col-6 text-center";
+		} else if (selectedSex === "boys") {
+			return "col-12 text-center"
+		} else if (selectedSex === "girls") {
+			return "display-none"
+		} 
+	}
 	const allBoysNames = [];
 
 	names.sort((a,b) => {return (a.name > b.name) ? 1 : -1}).map((name) => {
@@ -12,11 +22,11 @@ function BoysNames({ names }) {
 	})
 
 	return (
-			<div className="col-6">
-				<h2 id="boys" className="boys-heading text-center">Boys Names</h2>
+			<div id="boys" className={styling()}>
+				<h2  className="boys-heading text-center">Boys Names</h2>
 					<div className="row mx-1 boys-names-list">
 						{allBoysNames.map((name) => (
-						<p key={name.name} className="col-4 boys-name-styling">{name.name}</p>
+							<DisplayNames key={name.id} name={name} clickEvent={clickEvent} />
 						))}
 					</div>
 			</div>
