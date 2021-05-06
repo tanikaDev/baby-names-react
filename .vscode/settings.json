@@ -3,5 +3,6 @@
         "favourite",
         "favourites",
         "name"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
