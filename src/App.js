@@ -23,16 +23,13 @@ function App() {
 			styling = styling + " favourites-boys"
 		}
 
-
 		setFavouriteName([...favouriteName, {nameSelected, styling}])
-	 
 	 
 		let newList = mainList.map(name => name.name !== nameSelected ? name : null ).filter(name => {
 			return name !== null
 		});
 		
 		setMainList(newList)
-
 		}
 
 	function removeFromFavourite(e) {
@@ -49,7 +46,6 @@ function App() {
 
 	function changeSex(e) {
 		let selectedSex = e.target.id;
-		console.log(selectedSex)
 		setToggleSex(selectedSex);
 	}
 	

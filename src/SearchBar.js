@@ -25,7 +25,7 @@ function SearchBar( { state, clickEvent }) {
 	}
     return (
 			<div className="row align-items-center" >
-				<input type="text" className="search-bar col-5 offset-3" placeholder="search" onChange={searchName}></input>
+				<input type="text" className="search-bar col-4 offset-4" placeholder="search" onChange={searchName}></input>
 				<SelectSex clickEvent={clickEvent}/>
 			</div>
     );

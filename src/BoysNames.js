@@ -7,7 +7,7 @@ function BoysNames({ names, selectedSex, clickEvent }) {
 		if (selectedSex === "both") {
 			return "col-6 text-center";
 		} else if (selectedSex === "boys") {
-			return "col-12 text-center"
+			return "col-8 offset-2 text-center"
 		} else if (selectedSex === "girls") {
 			return "display-none"
 		} 
